@@ -13,14 +13,14 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {services.title}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
         </div>
 
         {/* Services Grid */}
@@ -32,7 +32,7 @@ const ServicesSection = () => {
             >
               <CardContent className="p-6 text-center">
                 {/* Service Icon */}
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-amber-50 flex items-center justify-center group-hover:bg-amber-100 transition-colors">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-yellow-50 flex items-center justify-center group-hover:bg-yellow-100 transition-colors">
                   <img 
                     src={service.icon} 
                     alt={service.name}
@@ -41,7 +41,7 @@ const ServicesSection = () => {
                 </div>
                 
                 {/* Service Name */}
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
                   {service.name}
                 </h3>
                 
@@ -58,7 +58,7 @@ const ServicesSection = () => {
         <div className="text-center">
           <Button 
             onClick={handleCTAClick}
-            className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white font-bold px-8 py-4 text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-yellow-400 hover:border-yellow-500"
           >
             {services.ctaText}
           </Button>

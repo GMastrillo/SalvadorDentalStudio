@@ -59,18 +59,18 @@ const LeadCaptureForm = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-teal-50 to-amber-50">
+    <section id="leadform" className="py-20 bg-gradient-to-br from-yellow-50 to-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {leadForm.title}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-teal-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
         </div>
 
         {/* Form Card */}
-        <Card className="shadow-2xl border-0 bg-white/90 backdrop-blur-sm">
+        <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
           <CardContent className="p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -87,7 +87,7 @@ const LeadCaptureForm = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Seu nome completo"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:ring-teal-500 transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-yellow-500 focus:ring-yellow-500 transition-colors"
                   />
                 </div>
 
@@ -103,8 +103,8 @@ const LeadCaptureForm = () => {
                     value={formData.whatsapp}
                     onChange={handleInputChange}
                     required
-                    placeholder="(11) 99999-9999"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:ring-teal-500 transition-colors"
+                    placeholder="(71) 99999-9999"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-yellow-500 focus:ring-yellow-500 transition-colors"
                   />
                 </div>
               </div>
@@ -122,7 +122,7 @@ const LeadCaptureForm = () => {
                   onChange={handleInputChange}
                   required
                   placeholder="seu@email.com"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:ring-teal-500 transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-yellow-500 focus:ring-yellow-500 transition-colors"
                 />
               </div>
 
@@ -131,7 +131,7 @@ const LeadCaptureForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-teal-500 hover:from-amber-600 hover:to-teal-600 text-white font-bold px-12 py-4 text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-black font-bold px-12 py-4 text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {isSubmitting ? 'Enviando...' : leadForm.ctaText}
                 </Button>

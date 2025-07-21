@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
     return [...Array(5)].map((_, i) => (
       <svg
         key={i}
-        className={`w-5 h-5 ${i < rating ? 'text-amber-400' : 'text-gray-300'}`}
+        className={`w-5 h-5 ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -19,14 +19,14 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="testimonials" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {testimonials.title}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-teal-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
         </div>
 
         {/* Testimonials Grid */}
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
 
                 {/* Patient Name */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black font-bold text-lg mr-4">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
           <p className="text-lg text-gray-700 mb-4">
             Junte-se aos nossos pacientes satisfeitos!
           </p>
-          <div className="flex items-center justify-center space-x-2 text-amber-600">
+          <div className="flex items-center justify-center space-x-2 text-yellow-600">
             <div className="flex">
               {renderStars(5)}
             </div>
