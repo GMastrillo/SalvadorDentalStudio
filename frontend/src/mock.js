@@ -1,4 +1,4 @@
-// Mock data for Salvador Dental Studio landing page
+// Mock data for Salvador Dental Studio landing page - Updated with official brand information
 
 export const mockData = {
   // Hero section data
@@ -6,7 +6,7 @@ export const mockData = {
     headline: "A tecnologia e a humanização que transformam sorrisos",
     subheadline: "Tratamentos de ponta com nossa especialista em Prótese Dentária, Dra. Vanessa Lessa. Recupere a confiança para sorrir.",
     ctaText: "Agende sua Avaliação pelo WhatsApp",
-    whatsappNumber: "5511999999999", // Mock WhatsApp number
+    whatsappNumber: "5571999535070", // Updated WhatsApp number
     backgroundImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzUzMTAyMzY1fDA&ixlib=rb-4.1.0&q=85"
   },
 
@@ -110,10 +110,10 @@ export const mockData = {
     ]
   },
 
-  // Location data
+  // Location data - Updated with correct address
   location: {
     title: "Onde Estamos",
-    address: "Av. Salvador, 123 - Centro, Salvador - BA, 40070-110",
+    address: "Rua Alceu Amoroso Lima, 786 – Sala 901 – Ed. Tancredo Neves Trade Center – Caminho das Árvores – Salvador/BA",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0!2d-38.5!3d-12.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
   },
 
@@ -144,11 +144,29 @@ export const mockData = {
     ]
   },
 
-  // Contact information
+  // Contact information - Updated with official information
   contact: {
-    whatsapp: "5511999999999",
-    phone: "(11) 9999-9999",
-    email: "contato@salvadordentalstudio.com.br",
-    address: "Av. Salvador, 123 - Centro, Salvador - BA, 40070-110"
+    whatsapp: "5571999535070", // Updated WhatsApp
+    phone: "(71) 99953-5070", // Updated phone display
+    email: "salvadordentalstudio@gmail.com", // Updated email
+    address: "Rua Alceu Amoroso Lima, 786 – Sala 901 – Ed. Tancredo Neves Trade Center – Caminho das Árvores – Salvador/BA",
+    instagram: "@salvadordentalstudio", // Instagram handle
+    facebook: "salvadordentalstudio", // Facebook handle
+    operatingHours: {
+      weekdays: "Segunda a sexta: 08:00h às 18:00h",
+      saturday: "Sábado: 08:00h às 12:00h"
+    },
+    technicalResponsible: "RT Vanessa Vasconcelos Lessa - CRO BA 14.849"
+  },
+
+  // Brand information
+  brand: {
+    name: "Salvador Dental Studio",
+    logo: "/logo-salvador-dental.png", // Placeholder for official logo
+    colors: {
+      primary: "#FFD700", // Gold
+      secondary: "#000000", // Black
+      accent: "#FFFFFF" // White
+    }
   }
 };
